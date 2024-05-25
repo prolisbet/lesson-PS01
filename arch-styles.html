@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--  тег `<meta>` сообщает браузеру, как следует управлять размерами и масштабом страницы,
+    content="width=device-width" устанавливает ширину области просмотра (viewport)
+    равной ширине экрана устройства,
+    initial-scale=1.0" устанавливает начальный уровень масштабирования на 1.0, что означает 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основные Архитектурные Стили</title>
+</head>
+<body>
+    <header>
+        <h1>Основные Архитектурные Стили</h1>
+    </header>
+    <div class="container">
+        <!-- тег `<ul>` в HTML обозначает "неупорядоченный список" (unordered list).
+        Это элемент, который используется для создания списка элементов, где порядок
+        элементов не имеет значения, и каждый элемент списка обычно отмечен маркером (bullet point). -->
+        <ul class="style-list">
+            <li><a href="#gothic">Готический стиль</a></li>
+            <li><a href="#baroque">Барокко</a></li>
+            <li><a href="#modernism">Модернизм</a></li>
+            <li><a href="#constructivism">Конструктивизм</a></li>
+        </ul>
+
+        <div class="style-clock" id="gothic">
+            <h2>Готический стиль</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Notre-Dame_de_Paris_2013-07.JPG/320px-Notre-Dame_de_Paris_2013-07.JPG" alt="Готический стиль">
+            <p>Готический стиль возник в середине XII века и использовался до XVI века.
+                Он характеризуется высокими шпилями, арками, витражами и обилием декора.</p>
+            <a href="https://ru.wikipedia.org/wiki/Готическая_архитектура"
+               target="_blank">Узнать больше</a>
+            <!-- Атрибут `target="_blank"` в теге `<a>` используется для указания,
+            что ссылка должна открываться в новой вкладке или новом окне браузера. -->
+        </div>
+
+        <div class="style-block" id="baroque">
+            <h2>Барокко</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/StPetersBasilicaEarlyMorning.jpg/320px-StPetersBasilicaEarlyMorning.jpg" alt="Барокко">
+            <p>Барокко — стиль в искусстве и архитектуре, который возник в Италии в конце XVI века.
+                Характеризуется пышностью, драматизмом и динамикой форм.</p>
+            <a href="https://ru.wikipedia.org/wiki/Барокко"
+               target="_blank">Узнать больше</a>
+        </div>
+
+        <div class="style-block" id="modernism">
+            <h2>Модернизм</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Barcelona_Palau_Güell.jpg/320px-Barcelona_Palau_Güell.jpg" alt="Модернизм">
+            <p>Модернизм — это направление в архитектуре и искусстве конца XIX — начала XX века,
+                характеризующееся отказом от исторических стилей и стремлением к новаторству.</p>
+            <a href="https://ru.wikipedia.org/wiki/Модерн"
+               target="_blank">Узнать больше</a>
+        </div>
+
+        <div class="style-block" id="constructivism">
+            <h2>Конструктивизм</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Zuev_Club_Moscow.jpg/320px-Zuev_Club_Moscow.jpg" alt="Конструктивизм">
+            <p>Конструктивизм — архитектурное направление, возникшее в Советской России в 1920-х годах,
+                характеризующееся функциональностью и геометрическими формами.</p>
+            <a href="https://ru.wikipedia.org/wiki/Конструктивизм_(искусство)"
+               target="_blank">Узнать больше</a>
+        </div>
+
+
+    </div>
+</body>
+</html>
