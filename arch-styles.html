@@ -8,6 +8,69 @@
     initial-scale=1.0" устанавливает начальный уровень масштабирования на 1.0, что означает 100% -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Основные Архитектурные Стили</title>
+    <!-- <style>: **body**: Устанавливает шрифт Arial (если он недоступен, то используется любой шрифт
+    без засечек), убирает отступы и поля, задает светло-серый фон и темно-серый цвет текста.
+    **.container**: Задает ширину контейнера 80% от ширины экрана и выравнивает его по центру с помощью `margin: 0 auto`.
+    **header**: Устанавливает зеленый фон, белый цвет текста, внутренние отступы сверху и снизу по 20px и
+    выравнивает текст по центру.
+    **h1**: Убирает стандартные отступы заголовка.
+    **.style-list**: Убирает маркеры списка и внутренние отступы.
+    **.style-list li**: Добавляет отступы между элементами списка.
+    **.style-block**: Устанавливает белый фон, серую границу, отступы сверху и снизу по 20px, внутренние отступы по 20px,
+    скругленные углы радиусом 8px и теневой эффект.
+    **.style-block img**: Устанавливает максимальную ширину изображения 100% от родительского элемента и скругляет углы
+    радиусом 8px.
+    **.style-block a**: Задает зеленый цвет ссылок, убирает подчеркивание и делает текст жирным.
+    **.style-block a:hover**: Добавляет подчеркивание при наведении курсора на ссылку. -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .style-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .style-list li {
+            margin: 10px 0;
+        }
+        .style-block {
+            background-color: white;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .style-block img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .style-block a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .style-block a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,16 +81,36 @@
         Это элемент, который используется для создания списка элементов, где порядок
         элементов не имеет значения, и каждый элемент списка обычно отмечен маркером (bullet point). -->
         <ul class="style-list">
+            <li><a href="#antique">Античный стиль</a></li>
             <li><a href="#gothic">Готический стиль</a></li>
             <li><a href="#baroque">Барокко</a></li>
+            <li><a href="#classicism">Классицизм</a></li>
+            <li><a href="#rococo">Рококо</a></li>
+            <li><a href="#empire">Ампир</a></li>
+            <li><a href="#artnouveau">Модерн/Ар-нуво/Югендстиль</a></li>
             <li><a href="#modernism">Модернизм</a></li>
-            <li><a href="#constructivism">Конструктивизм</a></li>
         </ul>
 
-        <div class="style-clock" id="gothic">
+        <div class="style-block" id="antique">
+            <h2>Античный стиль</h2>
+            <img src="https://www.facade-project.ru/images/cms/thumbs/350d98682b242e5b92c5dd2f77f62c3a67ddf858/3-2-barokko_500_auto_jpg.jpg"
+                 width="400"
+                 alt="Античный стиль">
+            <p>Когда говорят об античной архитектуре, прежде всего, имеют в виду искусство Древней <br>
+                Греции. Древнегреческая архитектура заложила основу европейской и служила примером <br>
+                для архитекторов всего мира.</p>
+            <a href="https://ru.wikipedia.org/wiki/Архитектура_Древней_Греции"
+               target="_blank">Узнать больше</a>
+            <!-- Атрибут `target="_blank"` в теге `<a>` используется для указания,
+            что ссылка должна открываться в новой вкладке или новом окне браузера. -->
+        </div>
+
+        <div class="style-block" id="gothic">
             <h2>Готический стиль</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Notre-Dame_de_Paris_2013-07.JPG/320px-Notre-Dame_de_Paris_2013-07.JPG" alt="Готический стиль">
-            <p>Готический стиль возник в середине XII века и использовался до XVI века.
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/K%C3%B6lner_Dom_von_Osten.jpg/800px-K%C3%B6lner_Dom_von_Osten.jpg"
+                 width="400"
+                 alt="Готический стиль">
+            <p>Готический стиль возник в середине XII века и использовался до XVI века. <br>
                 Он характеризуется высокими шпилями, арками, витражами и обилием декора.</p>
             <a href="https://ru.wikipedia.org/wiki/Готическая_архитектура"
                target="_blank">Узнать больше</a>
@@ -35,33 +118,80 @@
             что ссылка должна открываться в новой вкладке или новом окне браузера. -->
         </div>
 
+
         <div class="style-block" id="baroque">
             <h2>Барокко</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/StPetersBasilicaEarlyMorning.jpg/320px-StPetersBasilicaEarlyMorning.jpg" alt="Барокко">
-            <p>Барокко — стиль в искусстве и архитектуре, который возник в Италии в конце XVI века.
+            <img src="https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663129011_20-mykaleidoscope-ru-p-barokko-v-arkhitekture-krasivo-23.jpg"
+                 width="400"
+                 alt="Барокко">
+            <p>Барокко — стиль в искусстве и архитектуре, который возник в Италии в конце XVI века. <br>
                 Характеризуется пышностью, драматизмом и динамикой форм.</p>
             <a href="https://ru.wikipedia.org/wiki/Барокко"
                target="_blank">Узнать больше</a>
         </div>
 
-        <div class="style-block" id="modernism">
-            <h2>Модернизм</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Barcelona_Palau_Güell.jpg/320px-Barcelona_Palau_Güell.jpg" alt="Модернизм">
-            <p>Модернизм — это направление в архитектуре и искусстве конца XIX — начала XX века,
-                характеризующееся отказом от исторических стилей и стремлением к новаторству.</p>
+        <div class="style-block" id="classicism">
+            <h2>Классицизм</h2>
+            <img src="https://odel.ru/upload/iblock/4ce/4ce487bf40d93232fa16b4ed5c2a4417.jpg"
+                 width="400"
+                 alt="Классицизм">
+            <p>Классицизм - архитектурный стиль в европейской архитектуре XVII—XIX вв. В основу стиля легли <br>
+                архитектурные каноны (ордера) античности. Характерными чертами стиля являются монументальность, <br>
+                осевая симметрия, сдержанность и предельная чистота жанра не допускающая стилистических смешений.</p>
+            <a href="https://ru.wikipedia.org/wiki/Классицизм"
+               target="_blank">Узнать больше</a>
+        </div>
+
+        <div class="style-block" id="rococo">
+            <h2>Рококо</h2>
+            <img src="https://akfengroup.ru/800/600/https/timetraveling.ru/images/Munchen/nymphenburg-inside.jpg"
+                 width="400"
+                 alt="Рококо">
+            <p>Рококо — наименование художественного стиля западноевропейского, главным образом французского, <br>
+                искусства второй четверти и середины XVIII века. Для него характерны сложные лепные и <br>
+                резные узоры в виде рокайлей, вычурных завитков картушей и рельефов. </p>
+            <a href="https://ru.wikipedia.org/wiki/Рококо"
+               target="_blank">Узнать больше</a>
+        </div>
+
+        <div class="style-block" id="empire">
+            <h2>Ампир</h2>
+            <img src="https://bigfoto.name/uploads/posts/2021-12/1639321532_20-bigfoto-name-p-frantsuzskii-ampir-v-arkhitekture-27.jpg"
+                 width="400"
+                 alt="Ампир">
+            <p>Ампир — исторический художественный стиль, получивший распространение в странах Западной <br>
+                Европы и, отчасти, в России, в первой трети XIX века. Ему характерны пышность, торжественность, <br>
+                использование античных элементов. </p>
+            <a href="https://ru.wikipedia.org/wiki/Ампир"
+               target="_blank">Узнать больше</a>
+        </div>
+
+        <div class="style-block" id="artnouveau">
+            <h2>Модерн/Ар-нуво/Югендстиль</h2>
+            <img src="https://pro-dachnikov.com/uploads/posts/2021-11/1638291212_2-pro-dachnikov-com-p-modern-v-arkhitekture-foto-2.jpg"
+                 width="400"
+                 alt="Модерн/Ар-нуво/Югендстиль">
+            <p>Модерн — интернациональное художественное движение на рубеже XIX—XX веков, представители <br>
+                которого ставили цель создания нового художественного языка. В англо- и франкоязычной <br>
+                литературе за этим явлением закрепился термин ар-нуво (фр. art nouveau), в немецкоязычных <br>
+                странах - «югендстиль» (нем. Jugendstil — «молодой стиль»). Отличается этот стиль обилием <br>
+                декоративных деталей и элементов, плавными линиями, округлыми и текучими формами.</p>
             <a href="https://ru.wikipedia.org/wiki/Модерн"
                target="_blank">Узнать больше</a>
         </div>
 
-        <div class="style-block" id="constructivism">
-            <h2>Конструктивизм</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Zuev_Club_Moscow.jpg/320px-Zuev_Club_Moscow.jpg" alt="Конструктивизм">
-            <p>Конструктивизм — архитектурное направление, возникшее в Советской России в 1920-х годах,
-                характеризующееся функциональностью и геометрическими формами.</p>
-            <a href="https://ru.wikipedia.org/wiki/Конструктивизм_(искусство)"
+        <div class="style-block" id="modernism">
+            <h2>Модернизм</h2>
+            <img src="https://ucare.timepad.ru/c79ca8fa-63d2-4616-8507-ffcd3e6f4798/poster_event_1960373.jpg"
+                 width="400"
+                 alt="Модернизм">
+            <p>Модернизм — это направление в архитектуре и искусстве конца XIX — начала XX века, <br>
+                характеризующееся отказом от исторических стилей и стремлением к новаторству. Упор <br>
+                делается на повсеместное использование бетона, железобетонных и стеклянных конструкций, <br>
+                а функциональность и практичность выходят на первый план.</p>
+            <a href="https://ru.wikipedia.org/wiki/Модернизм"
                target="_blank">Узнать больше</a>
         </div>
-
 
     </div>
 </body>
